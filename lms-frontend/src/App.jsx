@@ -43,7 +43,7 @@ const App = () => {
       <Suspense fallback={<Loading />}>
         <Routes>
           {/* Public Routes */}
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/landing" element={<LandingPage />} />
           <Route path="/adminLogin" element={<AdminLogin />} />
           <Route path="/teacherLogin" element={<TeacherLogin />} />
           <Route path="/studentLogin" element={<StudentLogin />} />
@@ -56,7 +56,7 @@ const App = () => {
           <Route path="/admin/analyticsPage" element={<AnalyticsPage />} />
 
           {/* Teacher Routes */}
-          <Route path="/teacher/teacherDashboard" element={<TeacherDashboard />} />
+          <Route path="/" element={<TeacherDashboard />} />
           <Route path="/teacher/myCourses" element={<MyCourses />} />
           <Route path='/teacher/assignments' element={<Assignments />} />
           <Route path='/teacher/students' element={<Students />} />
